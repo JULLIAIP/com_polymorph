@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import { Button } from './components/Button'
 import './style/global.css'
 
@@ -6,7 +6,11 @@ import './style/global.css'
 function App() {
 
   return (
-    <Button >Create Account</Button>
+    <div>
+      <Button>Create Account</Button>
+
+      {/* Botao que vai assumir a forma do filho */}
+      <Button asChild><a href=''>NAV</a></Button></div>
   )
 }
 
